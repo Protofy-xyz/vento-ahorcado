@@ -2,6 +2,7 @@
     "name": "hangman",
     "description": "hangman asset, a game where players guess letters to form a word",
     "author_name": "protofy",
+    "version": "0.0.1",
     "tags": [
         "games",
         "language"
