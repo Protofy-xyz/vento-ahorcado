@@ -1,17 +1,26 @@
 return (() => {
-    const totalErrors = Object.values(board['letras jugador']).filter(v => v === 'BAD').length ?? 0;
     
+    const totalErrors = Object.values(board['letters said']??{}).filter(v => v === 'BAD').length ?? 0;
+
+    const word = board["new word"]
+    
+    if(!totalErrors || !word){
+        const image = "burning-0"
+        return `/public/images/${image}.png`
+    }
+    
+    
+
     const errorsToGameOver = 5
     let extension = "0"
 
-    const word = board["crear palabra"]
     const wordAsArr = word.toUpperCase().split('')
-    const userLetters = Object.keys(board["letras jugador"])
+    const userLetters = Object.keys(board["letters said"])
     const isCompleted = wordAsArr.every(l => userLetters.includes(l))
 
     if (totalErrors > 5) {
         extension = "over"
-    } else if (board["crear palabra"].length && isCompleted) {
+    } else if (word.length && isCompleted) {
         extension = "win"
     } else if (totalErrors >= 0 && totalErrors <= errorsToGameOver) {
         extension = totalErrors
