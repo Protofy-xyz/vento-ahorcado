@@ -156,6 +156,7 @@
             "editorOptions": {
                 "defaultTab": "value"
 <<<<<<< HEAD
+<<<<<<< HEAD
             },
             "displayTitle": false
 =======
@@ -163,6 +164,10 @@
 =======
             }
 >>>>>>> a518eef30 (Adds console screen to ahorcado board)
+=======
+            },
+            "displayTitle": false
+>>>>>>> a399c0258 (View how many errors remain)
         }
     ],
     "autopilot": false,
