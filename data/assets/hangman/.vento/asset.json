@@ -1,24 +1,22 @@
-[
-    {
-        "name": "hangman",
-        "description": "hangman asset, a game where players guess letters to form a word",
-        "author_name": "protofy",
-        "tags": [
-            "games",
-            "language"
-        ],
-        "files": [
-            "data/boards/hangman.json",
-            "data/boards/hangman.js",
-            "data/boards/hangman/**",
-            "data/public/images/burning-0.png",
-            "data/public/images/burning-1.png",
-            "data/public/images/burning-2.png",
-            "data/public/images/burning-3.png",
-            "data/public/images/burning-4.png",
-            "data/public/images/burning-5.png",
-            "data/public/images/burning-over.png",
-            "data/public/images/burning-win.png"
-        ]
-    }
-]
+{
+    "name": "hangman",
+    "description": "hangman asset, a game where players guess letters to form a word",
+    "author_name": "protofy",
+    "tags": [
+        "games",
+        "language"
+    ],
+    "files": [
+        "data/boards/hangman.json",
+        "data/boards/hangman.js",
+        "data/boards/hangman/**",
+        "data/public/images/burning-0.png",
+        "data/public/images/burning-1.png",
+        "data/public/images/burning-2.png",
+        "data/public/images/burning-3.png",
+        "data/public/images/burning-4.png",
+        "data/public/images/burning-5.png",
+        "data/public/images/burning-over.png",
+        "data/public/images/burning-win.png"
+    ]
+}
