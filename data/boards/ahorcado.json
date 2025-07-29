@@ -133,7 +133,8 @@
             "type": "value",
             "editorOptions": {
                 "defaultTab": "value"
-            }
+            },
+            "displayTitle": false
         }
     ],
     "autopilot": false,
