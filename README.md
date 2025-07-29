@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h3 align="center"> 
 <image height="50" src="https://raw.githubusercontent.com/Protofy-xyz/Protofy/assets/logo-protofy.png">
 </h3>
@@ -58,3 +59,6 @@ Join us at [Discord]("https://discord.gg/VpeZxMFfYW") to ask questions about bug
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Protofy-xyz/Protofy&type=Date)](https://star-history.com/#Protofy-xyz/Protofy&Date)
+=======
+# vento-ahorcado
+>>>>>>> 6b6703d6ab85115cdf4fc69f31dd9c5437962279
