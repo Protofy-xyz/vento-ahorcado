@@ -1,0 +1,1 @@
+return board["crear palabra"].split('').map(letter => board["letras jugador"][letter] === "OK" ? letter : "_").join(' ');
