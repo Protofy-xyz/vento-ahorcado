@@ -7,7 +7,7 @@
             "width": 2,
             "height": 8,
             "icon": "openai",
-            "name": "crear palabra",
+            "name": "new word",
             "color": "#0091ff",
             "description": "send a message to chatGPT",
             "params": {
@@ -17,7 +17,7 @@
             "configParams": {
                 "message": {
                     "visible": false,
-                    "defaultValue": "Crea una palabra en español para jugar al ahorcado, esta debe ser en mayusculas, sin tildes. Solo responde la palabra en cuestión y nada mas. Debe ser aleatoria",
+                    "defaultValue": "Give me an English word to play hangman. It must be in uppercase, without accents. Respond only with the word itself. It must be random.",
                     "type": "string"
                 }
             },
@@ -32,7 +32,7 @@
             "width": 2,
             "height": 12,
             "icon": "file-stack",
-            "name": "letras jugador",
+            "name": "letters said",
             "description": "Interactive object",
             "type": "action",
             "editorOptions": {
@@ -62,20 +62,20 @@
             "height": 6,
             "icon": "zap",
             "type": "action",
-            "name": "letra introducida jugador",
+            "name": "introduce a letter",
             "displayResponse": false,
             "params": {
-                "letra": "letra que ha dicho el jugador"
+                "letter": "introduce a letter"
             },
             "configParams": {
-                "letra": {
+                "letter": {
                     "visible": true,
                     "defaultValue": "",
                     "type": "string"
                 }
             },
             "displayIcon": false,
-            "buttonLabel": "Prueba suerte",
+            "buttonLabel": "Take luck!",
             "displayTitle": true
         },
         {
@@ -84,11 +84,11 @@
             "height": 4,
             "icon": "tag",
             "type": "value",
-            "name": "pantalla jugador",
+            "name": "secret word",
             "rules": [
-                "coge board?.['crear palabra']",
-                "recorre todas las letras (estan en la Key) de board?.['letras jugador'] y pon rallas en las letras que no esten y deja visibles las letras que esten",
-                "a fin de poder visualizar bien las letras introduce un espacio entre cada letra"
+                "get board?.['new word']",
+                "Loop through all the letters (they're in the key board?.['letters said']) and display underscores for the letters that haven't been guessed, leaving visible the ones that have been guessed.",
+                "for visibility introduce an space between the letters"
             ],
             "displayIcon": false
         },
@@ -98,9 +98,9 @@
             "height": 4,
             "icon": "tag",
             "type": "value",
-            "name": "errores",
+            "name": "errors",
             "rules": [
-                "cuenta cuantos BAD (value) hay en la lista board?.['letras jugador']"
+                "How many BAD (value) are in the list board?.['letters said']"
             ],
             "displayIcon": false
         },

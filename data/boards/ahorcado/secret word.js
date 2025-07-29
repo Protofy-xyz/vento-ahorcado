@@ -1,0 +1,1 @@
+return board?.['new word'].split('').map(letter => board['letters said'][letter] ? letter : '_').join(' ');
