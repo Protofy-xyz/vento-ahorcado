@@ -3,6 +3,6 @@
 return card({
     content: `
         ${cardIcon({ data, size: '48' })}    
-        ${cardValue({ value: data.value })}
+        ${cardValue({ value: data.value+"/6" })}
     `
 });
