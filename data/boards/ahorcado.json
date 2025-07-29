@@ -24,12 +24,18 @@
             "displayResponse": false,
             "displayIcon": false,
 <<<<<<< HEAD
+<<<<<<< HEAD
             "buttonLabel": "Start",
             "displayFrame": true,
             "displayButtonIcon": false
 =======
             "buttonLabel": "Iniciar juego"
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+            "buttonLabel": "Start",
+            "displayFrame": true,
+            "displayButtonIcon": false
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
         },
         {
             "key": "action_1753735720747",
@@ -81,10 +87,14 @@
             "displayIcon": false,
             "buttonLabel": "Prueba suerte",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "displayTitle": true
 =======
             "displayTitle": false
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+            "displayTitle": true
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
         },
         {
             "key": "value_1753736371444",
@@ -131,6 +141,9 @@
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
         },
         {
             "key": "value_1753792902618",
@@ -142,16 +155,21 @@
             "type": "value",
             "editorOptions": {
                 "defaultTab": "value"
+<<<<<<< HEAD
             },
             "displayTitle": false
 =======
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+            }
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
         }
     ],
     "autopilot": false,
     "layouts": {
         "lg": [
             {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "w": 14,
                 "h": 4,
@@ -163,6 +181,12 @@
                 "x": 0,
                 "y": 5,
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+                "w": 14,
+                "h": 4,
+                "x": 0,
+                "y": 0,
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
                 "i": "action_1753735418469",
                 "moved": false,
                 "static": false,
@@ -170,6 +194,7 @@
             },
             {
                 "w": 14,
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "h": 15,
                 "x": 0,
@@ -179,6 +204,11 @@
                 "x": 0,
                 "y": 10,
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+                "h": 15,
+                "x": 0,
+                "y": 4,
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
                 "i": "action_1753735720747",
                 "moved": false,
                 "static": false,
@@ -186,6 +216,9 @@
             },
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
                 "w": 14,
                 "h": 11,
                 "x": 39,
@@ -261,11 +294,14 @@
                 "w": 18,
                 "h": 7,
                 "x": 37,
+<<<<<<< HEAD
 =======
                 "w": 16,
                 "h": 5,
                 "x": 23,
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
                 "y": 5,
                 "i": "action_1753735860419",
                 "moved": false,
@@ -273,6 +309,7 @@
                 "isResizable": true
             },
             {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "w": 8,
                 "h": 5,
@@ -284,6 +321,12 @@
                 "x": 39,
                 "y": 5,
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+                "w": 8,
+                "h": 5,
+                "x": 53,
+                "y": 0,
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
                 "i": "value_1753736371444",
                 "moved": false,
                 "static": false,
@@ -294,16 +337,21 @@
                 "h": 5,
                 "x": 15,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "y": 4,
 =======
                 "y": 5,
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+                "y": 4,
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
                 "i": "value_1753740815806",
                 "moved": false,
                 "static": false,
                 "isResizable": true
             },
             {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "w": 31,
                 "h": 4,
@@ -313,11 +361,17 @@
                 "h": 5,
                 "x": 0,
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+                "w": 31,
+                "h": 4,
+                "x": 15,
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
                 "y": 0,
                 "i": "value_1753786160547",
                 "moved": false,
                 "static": false,
                 "isResizable": true
+<<<<<<< HEAD
 <<<<<<< HEAD
             },
             {
@@ -338,30 +392,17 @@
                 "w": 15,
                 "h": 9,
                 "isResizable": true
+=======
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
             },
             {
-                "i": "action_1753735720747",
-                "x": 23,
-                "y": 12,
-                "w": 15,
-                "h": 14,
-                "isResizable": true
-            },
-            {
-                "i": "action_1753735860419",
-                "x": 38,
-                "y": 25,
-                "w": 15,
-                "h": 7,
-                "isResizable": true
-            },
-            {
-                "i": "value_1753736371444",
-                "x": 53,
-                "y": 31,
+                "i": "value_1753792902618",
+                "x": 15,
+                "y": 17,
                 "w": 8,
                 "h": 5,
                 "isResizable": true
+<<<<<<< HEAD
             },
             {
                 "i": "value_1753740815806",
@@ -379,6 +420,8 @@
                 "h": 5,
                 "isResizable": true
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
             }
         ],
         "sm": [
@@ -430,6 +473,9 @@
                 "h": 5,
                 "isResizable": true
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
             },
             {
                 "i": "value_1753792902618",
@@ -438,8 +484,11 @@
                 "w": 1,
                 "h": 5,
                 "isResizable": true
+<<<<<<< HEAD
 =======
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
             }
         ],
         "xs": [
@@ -491,6 +540,9 @@
                 "h": 5,
                 "isResizable": true
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
             },
             {
                 "i": "value_1753792902618",
@@ -499,8 +551,11 @@
                 "w": 1,
                 "h": 5,
                 "isResizable": true
+<<<<<<< HEAD
 =======
 >>>>>>> fe1e60294 (Add ahorcado board)
+=======
+>>>>>>> a518eef30 (Adds console screen to ahorcado board)
             }
         ]
     }
