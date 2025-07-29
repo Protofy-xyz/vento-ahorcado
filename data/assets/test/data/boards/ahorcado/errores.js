@@ -1,1 +1,0 @@
-return Object.values(board['letras jugador']).filter(v => v === 'BAD').length;
