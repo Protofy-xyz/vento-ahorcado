@@ -6,7 +6,7 @@
         "games",
         "language"
     ],
-    "files": [
+    "packagedFiles": [
         "data/boards/hangman.json",
         "data/boards/hangman.js",
         "data/boards/hangman/**",
