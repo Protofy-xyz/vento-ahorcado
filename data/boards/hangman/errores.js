@@ -1,1 +1,0 @@
-return Object.keys(board['letters said']??{}).filter(letter => board['letters said'][letter] === 'BAD').length;

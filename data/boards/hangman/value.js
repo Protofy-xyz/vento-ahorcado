@@ -1,1 +1,0 @@
-return board?.['crear palabra']?.length;
