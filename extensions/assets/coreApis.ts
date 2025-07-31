@@ -6,6 +6,7 @@ import { promises } from 'fs';
 import path from "path";
 import {installAsset} from "./assets"
 import AdmZip from 'adm-zip';
+import { c } from "tar";
 
 const root = path.join(process.cwd(), "..", "..");
 const logger = getLogger();
@@ -78,6 +79,29 @@ const decompressAndInstallAsset = async (context, zipFile) => {
     });
 };
 
+const unpackage = async (context, zipFile) => {
+    const zipPath = path.join(assetsRoot, zipFile);
+    const assetName = zipFile.replace(".zip", "");
+    const assetPath = path.join(assetsRoot, assetName);
+
+    await decompressZip({
+        zipPath,
+        outputPath: assetPath,
+        done: async (outputPath) => {
+            console.log(`Decompressed ${zipFile} to ${outputPath}`);
+
+            await waitForFolderReady(assetPath);
+
+            // await context.os2.deleteFile({
+            //     path: `${assetsDir}/${zipFile}`,
+            // });
+        },
+        error: (err) => {
+            console.error(`Error decompressing ${zipFile}:`, err);
+        },
+    });
+};
+
 export default (app, context) => {
 
     // on upload file to assets folder, install the asset
@@ -88,7 +112,8 @@ export default (app, context) => {
             // call the install
             const payload = event.payload || {};
             if (payload.path == assetsDir && payload.mimetype == "application/x-zip-compressed") {
-                await decompressAndInstallAsset(context, payload.filename);
+                // await decompressAndInstallAsset(context, payload.filename);
+                await unpackage(context, payload.filename)
             }
 
         },
@@ -132,6 +157,9 @@ export default (app, context) => {
                 }
             },
         })
+        console.log(`Assets installed.`);
+        await API.get("/api/core/v1/reloadBoards", getServiceToken())
+        console.log(`Board reloaded after installing asset.`);
         // TODO: return all the installed assets
         res.send({ "result": "All assets installed successfully." });
     }))
@@ -152,6 +180,10 @@ export default (app, context) => {
         for (const asset of assetsToInstall) {
             installAsset(asset)
         }
+
+        console.log(`Assets installed.`);
+        await API.get("/api/core/v1/reloadBoards", getServiceToken())
+        console.log(`Board reloaded after installing asset.`);
 
         res.send({ "result": "All assets installed successfully." });
     }))
